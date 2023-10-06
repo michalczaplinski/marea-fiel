@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "dotenv -c -- turbo build",
+    "dev": "dotenv -c -- turbo dev --concurrency 15",
+    "lint": "turbo lint",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "db:push": "turbo db:push",
+    "db:generate": "turbo db:generate",
+    "db:studio": "pnpm --filter database run db:studio",
+    "mail:preview": "pnpm --filter mail run preview",
+    "storybook": "pnpm --filter web storybook"
+  },
+  "dependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.14",
+    "typescript": "5.2.2"
+  },
+  "packageManager": "pnpm@8.3.0",
+  "devDependencies": {
+    "dotenv-cli": "^7.3.0",
+    "prettier-plugin-tailwindcss": "^0.5.4"
+  }
+}
