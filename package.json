@@ -9,8 +9,7 @@
     "db:push": "turbo db:push",
     "db:generate": "turbo db:generate",
     "db:studio": "pnpm --filter database run db:studio",
-    "mail:preview": "pnpm --filter mail run preview",
-    "storybook": "pnpm --filter web storybook"
+    "mail:preview": "pnpm --filter mail run preview"
   },
   "dependencies": {
     "eslint": "^8.50.0",
